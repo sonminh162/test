@@ -5,6 +5,7 @@ public class GameRatAndCat {
         cat.run();
         rat.run();
         cat.catchRat(rat);
+        if(cat.catchRat(rat))cat.eat(rat);
 
         Cat cat1 = new Cat("a",10);
         Cat cat2 = new Cat("b",10);
@@ -15,7 +16,15 @@ public class GameRatAndCat {
         Rat rat3 = new Rat("c",13,10);
 
         Cat[] catList = new Cat[3];
-        for(int i = 1; i<= 3;i++){
-        }
+        catList[0] = cat1;
+        catList[1] = cat2;
+        catList[2] = cat3;
+
+        Rat[] ratList = new Rat[3];
+        ratList[0] = rat1;
+        ratList[1] = rat2;
+        ratList[2] = rat3;
+
+
     }
 }
