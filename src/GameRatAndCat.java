@@ -11,20 +11,23 @@ public class GameRatAndCat {
         Cat cat2 = new Cat("b",10);
         Cat cat3 = new Cat("c",10);
 
-        Rat rat1 = new Rat("a",13,10);
-        Rat rat2 = new Rat("b",13,10);
-        Rat rat3 = new Rat("c",13,10);
+        Rat rat1 = new Rat("jerry",13,10);
+        Rat rat2 = new Rat("sexy",13,10);
+        Rat rat3 = new Rat("ChitChit",13,10);
 
-        Cat[] catList = new Cat[3];
-        catList[0] = cat1;
-        catList[1] = cat2;
-        catList[2] = cat3;
+        CatList cats = new CatList();
+        cats.add(cat1);
+        cats.add(cat2);
+        cats.add(cat3);
 
-        Rat[] ratList = new Rat[3];
-        ratList[0] = rat1;
-        ratList[1] = rat2;
-        ratList[2] = rat3;
+        RatList rats = new RatList();
+        rats.add(rat1);
+        rats.add(rat2);
+        rats.add(rat3);
 
-
+        if(rats.findName("ChitChit"))
+            System.out.println("Found!");
+        else
+            System.out.println("Not Found!");
     }
 }
